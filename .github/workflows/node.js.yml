@@ -27,5 +27,6 @@ jobs:
     - run: mkdir .public
     - run: cp -r * .public
     - run: mv .public public
+    - run: yarn install
     - run: cd public
     - run: yarn install
