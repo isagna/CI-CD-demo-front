@@ -1,0 +1,16 @@
+image: node:alpine
+
+
+pages:
+  stage: deploy
+  script:
+    - mkdir .public
+    - cp -r * .public
+    - mv .public public
+    - cd public
+    - yarn install
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
