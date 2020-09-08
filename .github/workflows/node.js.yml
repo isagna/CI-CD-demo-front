@@ -24,4 +24,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: ls
+    - run: mkdir .public
+    - run: cp -r * .public
+    - run: mv .public public
+    - run: cd public
+    - run: yarn install
