@@ -28,7 +28,7 @@ jobs:
 #    - run: cp -r * .public
 #    - run: mv .public public
     - run: yarn install
-    - run: cd public
+#    - run: cd public
 #    - run: yarn install
     - run: ls -la
     - run: ls -la ..
